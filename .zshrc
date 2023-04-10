@@ -11,6 +11,10 @@ setopt hist_expire_dups_first # delete duplicates first when HISTFILE size excee
 setopt hist_ignore_dups       # ignore duplicated commands history list
 setopt hist_ignore_space      # ignore commands that start with space
 ####
+# BindKeys
+bindkey '^[[1;5C' forward-word  # Ctrl+arrow right
+bindkey '^[[1;5D' backward-word # Ctrl+arrow left
+
 # Enable suggestions
 source ~/zsh-autosuggestions/zsh-autosuggestions.zsh
 ####
